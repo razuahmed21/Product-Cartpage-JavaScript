@@ -6,7 +6,7 @@ Website: www.programming-hero.com
 
 +++++++++++++++++++++++++++++*/
 
-/*==================== 1. Default CSS ===================*/
+/*====================Default CSS ===================*/
 
 html,
 body {
@@ -14,7 +14,6 @@ body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0px;
 	padding: 0px;
-	scroll-behavior: smooth;
 }
 
 ::-moz-selection {
@@ -103,13 +102,13 @@ ul {
 	padding: 30px;
 	border-radius: 10px;
 	padding: 50px 60px;
-	box-shadow: 0 5px 15px
-    rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .padding-reduce {
 	padding: 0;
 }
+
 .form-control:focus {
 	background-color: #fff;
 	border-color: #EBEBEB;
@@ -117,28 +116,14 @@ ul {
 	box-shadow: none;
 }
 
-/* ================================= */
+/* ================ Main CSS ================= */
 
-.cart-history-area {
+#cart-history-area {
 	background-image: url(../img/main-bg.jpg);
 	background-position: center;
 	background-size: cover;
-	height: auto;
 	padding: 100px 0;
 	height: 100vh;
-	position: relative;
-	z-index: 1;
-}
-
-.cart-history-area:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #0e0d0dca;
-	z-index: -1;
 }
 
 .product-image img {
@@ -182,7 +167,11 @@ ul {
 	border: none;
 	border: 1px solid #EBEBEB
 }
-.product-price{text-align: center;}
+
+.product-price {
+	text-align: center;
+}
+
 .product-remove i {
 	text-decoration: none;
 	font-size: 25px;
@@ -233,5 +222,50 @@ ul {
 	box-shadow: 0px 3px 15px rgba(116, 200, 110, 0.493)
 }
 
+.thank-you-pop {
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+}
+
+.thank-you-pop img {
+	width: 62px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.thank-you-pop h1 {
+	font-size: 35px;
+	margin-bottom: 18px;
+	color: #5C5C5C;
+}
+
+.thank-you-pop p {
+	font-size: 20px;
+	margin-bottom: 27px;
+	color: #5C5C5C;
+}
+
+.thank-you-pop h3.cupon-pop {
+	font-size: 21px;
+	margin-bottom: 40px;
+	color: #222;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 20px;
+	border: 2px dashed #222;
+	clear: both;
+	font-weight: normal;
+}
+
+.thank-you-pop h3.cupon-pop span {
+	color: rgb(9, 187, 77);
+}
+
+.modal-content {
+	margin-top: 15%;
+}
 
 /*++++++++++++++++++++ CSS END +++++++++++++++++ */

@@ -13,73 +13,77 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/responsive.css.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Shopping Cart</title>
 </head>
 
 <body>
-    <section class="cart-history-area">
+    <section id="cart-history-area">
         <div class="container product-box-bg">
-            <div class="row d-flex align-items-center product-row-bg">
-                <div class="col-xl-2 col-lg-2 col-md-2">
-                    <div class="product-image">
-                        <img src="img/product-1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5">
-                    <div class="product-title">
-                        <h2><a href="#">iPhone 11 Pro 128GB Black</a></h2>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2">
-                    <div class="min-add-button">
-                        <div class="input-group">
-                            <i id="decrement1" class="fa fa-minus" aria-hidden="true"></i>
-                            <input type="text" class="form-control" id="boxValue1" size="10" value="1">
-                            <i id="increment1" class="fa fa-plus" aria-hidden="true"></i>
+            <div id="row1">
+                <div class="row d-flex align-items-center product-row-bg">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-5">
+                        <div class="product-image">
+                            <img src="img/product-1.png" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2">
-                    <div class="product-price">
-                        <p>$ <span id="iphonePrice">799</span></p>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 col-7">
+                        <div class="product-title">
+                            <h2><a href="#">iPhone 11 Pro 128GB Black</a></h2>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-1">
-                    <div class="product-remove text-right">
-                        <i class="far fa-times-circle"></i>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-5 col-6">
+                        <div class="min-add-button">
+                            <div class="input-group">
+                                <i id="decrement1" class="fa fa-minus" aria-hidden="true"></i>
+                                <input type="text" class="form-control" id="boxValue1" size="10" value="1">
+                                <i id="increment1" class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4">
+                        <div class="product-price">
+                            <p>$ <span id="iphonePrice">799</span></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-2">
+                        <div class="product-remove text-right">
+                            <i id="removeBtn1" class="far fa-times-circle"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex align-items-center product-row-bg mt-30">
-                <div class="col-xl-2 col-lg-2 col-md-2">
-                    <div class="product-image">
-                        <img src="img/product-2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5">
-                    <div class="product-title">
-                        <h2><a href="#">iPhone 11 Silicone Case - Black</a></h2>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2">
-                    <div class="min-add-button">
-                        <div class="input-group">
-                            <i class="fa fa-minus" aria-hidden="true"></i>
-                            <input type="text" class="form-control" id="boxValue2" size="10" value="1">
-                            <i id="increment2" class="fa fa-plus" aria-hidden="true"></i>
+            <div id="row2">
+                <div class="row d-flex align-items-center product-row-bg mt-30">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-5">
+                        <div class="product-image">
+                            <img src="img/product-2.png" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2">
-                    <div class="product-price">
-                        <p>$ <span id="iphoneCase">131</span> </p>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 col-7">
+                        <div class="product-title">
+                            <h2><a href="#">iPhone 11 Silicone Case - Black</a></h2>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-1">
-                    <div class="product-remove text-right">
-                        <i class="far fa-times-circle"></i>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-5 col-6">
+                        <div class="min-add-button">
+                            <div class="input-group">
+                                <i id="decrement2" class="fa fa-minus" aria-hidden="true"></i>
+                                <input type="text" class="form-control" id="boxValue2" size="10" value="1">
+                                <i id="increment2" class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4">
+                        <div class="product-price">
+                            <p>$ <span id="iphoneCase">131</span> </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-2">
+                        <div class="product-remove text-right">
+                            <i id="removeBtn2" class="far fa-times-circle"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,7 +126,27 @@
             <div class="row">
                 <div class="col-12 padding-reduce">
                     <div class="proceed-checkout text-right">
-                        <a href="#">procced checkout</a>
+                        <a id="proceedCheckout" data-toggle="modal" data-target="#ignismyModal" href="#">procced
+                            checkout</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="ignismyModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-label=""><span>×</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="thank-you-pop">
+                                    <img src="img/tick-mark.png"
+                                        alt="">
+                                    <h1>Thank You!</h1>
+                                    <p>Your submission is received and we will contact you soon</p>
+                                    <h3 class="cupon-pop">Order Id: <span>12345</span></h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
